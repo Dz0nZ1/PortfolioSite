@@ -2,11 +2,12 @@ import {motion} from "framer-motion";
 import "./sidebar.scss";
 import Links from "./Links/Links.jsx";
 import ToggleButton from "./ToggleButton/ToggleButton.jsx";
-import {useState} from "react";
+import {useContext} from "react";
+import OpenContext from "../../context/OpenContext.jsx";
 
 export default function Sidebar() {
 
-    const [open, setOpen ] = useState(false);
+    const {open, setOpen } = useContext(OpenContext)
 
 
 
