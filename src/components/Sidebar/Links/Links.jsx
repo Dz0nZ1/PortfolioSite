@@ -32,10 +32,9 @@ export default function Links() {
 
     const items = [
         "Homepage",
-        "Services",
+        "Skills",
         "Portfolio",
         "Contact",
-        "about"
     ]
 
 
