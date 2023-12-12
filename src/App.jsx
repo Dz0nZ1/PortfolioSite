@@ -1,21 +1,28 @@
 import "./app.scss"
 import Navbar from "./components/Navbar/Navbar.jsx";
+import Hero from "./components/Hero/Hero.jsx";
+import Particle from "./components/Particle.jsx";
+import Skills from "./components/Skills/Skills.jsx";
+import {OpenProvider} from "./context/OpenContext.jsx";
 function App() {
 
   return (
       <div>
-          <section id="Homepage">
-              <Navbar>
 
-              </Navbar>
-          </section>
-          <section id="Services">Parallax</section>
-          <section>Services</section>
-          <section id="Portfolio">Parallax</section>
-          <section>Portfolio1</section>
-          <section>Portfolio2</section>
-          <section>Portfolio3</section>
-          <section id="Contact">Contact</section>
+         <OpenProvider>
+             <section id="Homepage">
+                 <Particle></Particle>
+                 <Hero/>
+                 <Navbar/>
+             </section>
+             <section id="Skills">
+                 <Skills/>
+             </section>
+             {/*<Portfolio/>*/}
+             {/*<section id="Contact">*/}
+             {/*    <Contact/>*/}
+             {/*</section>*/}
+         </OpenProvider>
 
 
       </div>
